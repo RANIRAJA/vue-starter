@@ -9,7 +9,7 @@ pipeline {
                    }
         stage ('analysis'){
             steps  { 
-                 sh 'docker container run --rm -v /home/ubuntu/.jenkins_testbed/workspace/$JOB_NAME:/app/ ajitemsahasrabuddhe/sonar-scanner:13 -Dsonar.projectBaseDir=/app/ '
+                 sh 'docker container run --rm -v /home/ubuntu/.jenkins_testbed/workspace/$JOB_NAME:/app/ ajitemsahasrabuddhe/sonar-scanner:13 -Dsonar.projectBaseDir=/app/'
                     }
                           }
  
